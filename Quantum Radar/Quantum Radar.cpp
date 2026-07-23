@@ -81,7 +81,6 @@ class Rule {
 public:
     virtual ~Rule() = default;
     virtual string getRuleName() const = 0;
-    // returns true if violated, and put in the violation object
     virtual bool checkViolation(const Vehicle* vehicle, Violation& outViolation) const = 0;
 };
 
